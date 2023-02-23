@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/input/input.css">
+    <link rel="stylesheet" href="./assets/css/output/output.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    <link rel="icon" href="./assets/img/icon_candy.ico">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="./assets/img/logo.svg" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section class="box">
+            <section class="main__input container">
+                <label class="main__input--titulo" for="input__texto">Digite seu texto</label>
+                <textarea name="input__texto" id="input__texto" cols="30" rows="40" autofocus></textarea>
+                <div class="aviso">
+                    <img class="aviso__icon" src="./assets/img/icon_aviso.svg" alt="Ícone de exclamação">
+                    <p class="aviso__texto">Apenas letras minúsculas e sem acento.</p>
+                    <button id="botao--4" value="Apagar" type="submit"
+                        onClick="window.location.reload();">Apagar</button>
+                </div>
+                <div class="botoes">
+                    <button class="botao botao--1" value="Criptografar" type="submit"
+                        id="botao--1">Criptografar</button>
+                    <button class="botao botao--2" value="Descriptografar" type="submit"
+                        id="botao--2">Descriptografar</button>
+                </div>
+
+
+            </section>
+
+            <section class="output">
+
+                <div class="card__output"></div>
+
+                <div class="center__output">
+                    <textarea name="output__texto" id="output__texto" cols="30" rows="10" readonly></textarea>
+
+                    <div id="input__vazio">
+                        <img src="./assets/img/img_vazio.svg" alt="imagem de resultado vazio">
+                        <h2>Nenhuma mensagem encontrada</h2>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+
+
+                    </div>
+                    <button id="botao--3" class="botao" value="Copiar" type="submit">Copiar</button>
+                </div>
+
+
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+
+            <div class="rodape__texto">Me siga nas redes</div>
+            <div>
+                <ul class="icon__redes">
+                    <li><a href="https://github.com/jaianeoliv"><img src="./assets/img/icon_github.svg"
+                                alt="logo github" height="50px" width="50px"></a></li>
+                    <li><a href="https://www.linkedin.com/in/jaiane-oliveira-8a94a2231/"><img
+                                src="./assets/img/icon-linkedin-v2.svg" alt="icon linkedin" height="50px" width="50px"></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p >&copy; 2022 Copyright Jaiane Oliveira</p>
+                <a href="https://www.oracle.com/br/education/oracle-next-education/" style="text-decoration: none;">
+                    <p>Alura | Oracle One </p>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+   
+</body>
+
+</html>
+
+<script src="script.js"></script>

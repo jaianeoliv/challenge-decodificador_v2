@@ -1,0 +1,76 @@
+:root {
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --inter: 'Inter', sans-serif;
+
+    
+}
+
+html {
+    background: var(--light-blue-300);
+}
+
+body {
+    font-family: var(--inter) ;
+}
+
+textarea {
+    border: none;
+
+}
+
+header {
+    position: relative;
+}
+
+.botao {
+    border: .1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    height: 67px;
+    width: 328px;
+}
+
+.botoes {
+    display: flex; 
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+   
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    padding: 0px 70px 0px 60px;
+    gap: 2rem;
+   
+    
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+   
+}
+
+.logo {
+    position: relative;
+    margin: 2rem 0 0 2rem;
+}
+
+.rodape {
+    background: var(--dark-blue-300);
+    height: 100px;
+    padding: 1rem;
+}
+
+

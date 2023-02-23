@@ -1,0 +1,86 @@
+.card__output {
+    position: relative;
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 24px;
+    height: 844px;
+    width: 400px;
+    transform: translate(0%, -5%);
+}
+
+
+
+.output {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+
+}
+
+.center__output {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    text-align: center;
+    height: 790px;
+
+
+}
+
+.center__output h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--inter);
+    text-align: center;
+    padding: 1rem;
+    color: var(--gray-500);
+}
+
+.center__output p {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0 5rem;
+    text-align: center;
+    gap: 1rem;
+    color: var(--gray-400);
+}
+
+
+
+#botao--3 {
+    position: relative;
+  
+   margin-top: 55px;
+
+    background-color: white;
+    color: var(--dark-blue-300);
+    cursor: pointer;
+
+}
+
+.output {
+
+    display: flex;
+
+}
+
+
+#output__texto {
+    position: relative;
+    height: 600px;
+    width: 350px;
+    
+    outline: none;
+    overflow: auto;
+    resize: none;
+    font-size: 1.375rem;
+    margin-bottom: 35px;
+   
+
+}

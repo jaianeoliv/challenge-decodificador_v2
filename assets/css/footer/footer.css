@@ -1,0 +1,43 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: var(--light-blue-300);
+    height: fit-content;
+}
+
+.rodape__texto {
+    font-size: 1.25rem;
+    margin: 20px 0 10px 0 ;
+   
+}
+
+.icon__redes {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction:row;
+    gap: 1.25rem;
+    width: auto;
+    height: auto;
+   
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin-top: 0.75rem;
+    align-items: center;
+    
+}
+
+.copyright a:hover {
+    color: rgb(195, 193, 193);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--gray--400);
+}
