@@ -1,11 +1,12 @@
-.rodape {
+.rodape { 
+    align-content: center;
+    align-items: center;
+    color: var(--light-blue-300);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    color: var(--light-blue-300);
     height: fit-content;
+
 }
 
 .rodape__texto {
@@ -16,21 +17,26 @@
 
 .icon__redes {
     display: flex;
-    margin-bottom: 10px;
     flex-direction:row;
-    gap: 1.25rem;
-    width: auto;
+    gap: 1.25rem; 
     height: auto;
+    margin-bottom: 10px;
+    width: auto;
    
 }
 
-.copyright {
+.copyright { 
+    align-items: center;
+    color: var(--light-blue-300);
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
     margin-top: 0.75rem;
-    align-items: center;
     
+}
+
+.copyright a {
+    color: var(--light-blue-300);
 }
 
 .copyright a:hover {

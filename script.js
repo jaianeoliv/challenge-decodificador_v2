@@ -4,6 +4,7 @@ var vazio = document.querySelector(".input__vazio")
 var resultado = document.querySelector("#output__texto")
 var botao = document.querySelector("#botao-3")
 
+document.getElementById('botao--3').style.display = "none"
 
 document.getElementById('botao--1').addEventListener('click', function () {
 
@@ -11,6 +12,7 @@ document.getElementById('botao--1').addEventListener('click', function () {
     if (check !== '') {
 
         document.getElementById('input__vazio').style.display = "none"
+        document.getElementById('botao--3').style.display = "initial"
 
         let i = input.value.toLowerCase()
         let substituir = i.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat")
@@ -26,6 +28,7 @@ document.getElementById('botao--2').addEventListener('click', function () {
     let check = document.getElementById('input__texto').value;
     if (check !== '') {
         document.getElementById('input__vazio').style.display = "none"
+        document.getElementById('botao--3').style.display = "initial"
 
 
         let i = input.value.toLowerCase()

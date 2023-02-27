@@ -10,15 +10,20 @@
     --gray-500: #343A40;
     --inter: 'Inter', sans-serif;
 
-    
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html {
     background: var(--light-blue-300);
+
 }
 
 body {
-    font-family: var(--inter) ;
+    font-family: var(--inter);
+
 }
 
 textarea {
@@ -28,6 +33,7 @@ textarea {
 
 header {
     position: relative;
+
 }
 
 .botao {
@@ -38,33 +44,32 @@ header {
 }
 
 .botoes {
-    display: flex; 
+    display: flex;
     gap: 2rem;
     justify-content: center;
     padding: 2rem;
-   
+
 }
 
 .box {
     display: grid;
-    grid-template-columns: 1fr 0fr;
-    padding: 0px 70px 0px 60px;
-    gap: 2rem;
-   
-    
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
 
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
-   
+    margin-left: 4rem;
+
 }
 
 .logo {
-    position: relative;
     margin: 2rem 0 0 2rem;
+    position: relative;
+
 }
 
 .rodape {
@@ -73,4 +78,196 @@ header {
     padding: 1rem;
 }
 
+@media screen and (max-width: 480px) {
 
+    .box {
+        display: block;
+        margin-top: 3rem;
+        padding: 0.75rem;
+
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    #input__texto {
+
+        height: 300px;
+        width: max-content;
+    }
+
+    #input__vazio {
+        margin-top: 0 !important;
+    }
+
+    .aviso {
+        display: flex;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .aviso__texto {
+        padding: 0;
+    }
+
+    .botoes {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #botao--1 {
+        margin-bottom: 0.625rem;
+        padding: 0;
+    }
+
+    #botao--2 {
+        padding: 0;
+    }
+
+    #botao--3 {
+        margin: 0 !important;
+    }
+
+    .output {
+        margin-top: 5rem;
+        position: relative;
+    }
+
+    .card__output {
+        border-radius: 32px !important;
+        min-width: 100px;
+        max-height: 550px;
+        overflow: auto;
+        
+    }
+
+    .output__img {
+        display: none;
+    }
+
+    #output__texto {
+        min-height: 50px;
+        max-height: 400px;
+        width: 90vw !important;
+        overflow: auto;
+    }
+
+    #input__vazio p {
+        line-height: 1.3rem;
+    }
+    #input__vazio h2,
+    p {
+        margin-bottom: 2rem;
+        padding: 1rem;
+       
+    }
+
+    footer {
+        font-size: 85%;
+        overflow-x: hidden;
+    }
+
+ 
+}
+
+/* -----------  */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .box {
+        display: block;
+        margin-top: 3rem;
+        padding: 1rem;
+
+    }
+
+    .container {
+
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .main__input {
+        display: flex;
+        justify-content: center;
+    }
+
+    #input__texto {
+
+        height: auto;
+        width: max-content;
+    }
+
+    .aviso {
+        display: flex;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+
+    #botao--1 {
+        margin-bottom: 1.25rem;
+        padding: 0;
+    }
+
+    #botao--2 {
+        padding: 0;
+    }
+
+    .output {
+        margin-top: 5rem;
+        position: relative;
+    }
+
+    .card__output {
+        border-radius: 50px !important;
+        width: 100vw !important;
+    }
+
+    #output__texto {
+        height: 500px;
+        width: 90vw!important;
+    }
+
+    #input__vazio h2,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        font-size: 85%;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    html {
+        font-size: 85%;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 3rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .output {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        width: 100vw!important;
+    }
+}

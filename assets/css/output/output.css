@@ -1,86 +1,74 @@
 .card__output {
-    position: relative;
-    display: flex;
-    position: relative;
     background-color: white;
     border-radius: 24px;
+    display: flex;
     height: 844px;
-    width: 400px;
+    position: relative;
     transform: translate(0%, -5%);
+    width: 350px;
 }
-
 
 
 .output {
-    position: relative;
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
-
-    
+    position: relative;
 
 }
 
-.center__output {
-    position: absolute;
-    display: flex;
+.center__output { 
     align-items: center;
-    
+    display: flex;
     flex-direction: column;
-    text-align: center;
     height: 790px;
-
-
+    position: absolute;
+    text-align: center;
+    
 }
 
 .center__output h2 {
+    color: var(--gray-500);
+    font-family: var(--inter);
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: var(--inter);
-    text-align: center;
     padding: 1rem;
-    color: var(--gray-500);
+    text-align: center;
+    
 }
 
 .center__output p {
-    font-weight: 400;
+    color: var(--gray-400);
     font-size: 1rem;
+    font-weight: 400;
+    gap: 1rem;
     padding: 0 5rem;
     text-align: center;
-    gap: 1rem;
-    color: var(--gray-400);
 }
 
 
 
 #botao--3 {
-    position: relative;
-  
-   margin-top: 55px;
-
     background-color: white;
     color: var(--dark-blue-300);
     cursor: pointer;
-
+    margin-top: 27px;
+    position: relative;
+    
 }
 
-.output {
 
-    display: flex;
-
-}
 
 
 #output__texto {
-    position: relative;
+    color: var(--dark-blue-300);
+    font-size: 1.375rem;
     height: 600px;
-    width: 350px;
-    
+    margin-bottom: 35px;
     outline: none;
     overflow: auto;
+    position: relative;
     resize: none;
-    font-size: 1.375rem;
-    margin-bottom: 35px;
-   
+    width: 330px;
 
 }

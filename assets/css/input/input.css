@@ -5,17 +5,19 @@
     font-style: normal;
     font-weight: 400;
     padding-bottom: 0.625rem;
+
 }
 
 #input__texto {
+    background-color: var(--light-blue-300);
+    color: var(--dark-blue-300);
+    font-size: 1.375rem;
     height: 550px;
-    width: 700px;
     outline: none;
     overflow: auto;
+  
     resize: none;
-    padding: 1rem;
-    font-size: 1.375rem;
-    background-color: var(--light-blue-300);
+    width: auto;
    
 }
 
@@ -23,13 +25,10 @@
     display: flex;
     gap: 1rem;
     margin-top: 15px;
-    
-    
-    
    
 }
+
 .aviso__icon{
-    
     height: 1rem;
     width: 1rem;
 }
@@ -48,19 +47,19 @@
 
 #botao--4 {
     background-color: var(--dark-blue-300);
-    color: white;
     border: .1px solid var(--dark-blue-300);
     border-radius: 10px;
-    height: 24px;
-    width: 80px;
-    margin-left: 365px;
+    color: white;
     cursor: pointer;
+    height: 24px;
+    
+    width: 80px;
   
 }
 
 #input__vazio {
-    position: absolute;
     padding-top: 10rem;
+    position: absolute;
     
 }
 
